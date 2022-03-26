@@ -71,7 +71,7 @@ def measure_detection_performance(detections, labels, labels_valid, min_iou=0.5)
                 iou = intersection / union
                 
                 ## step 6 : if IOU exceeds min_iou threshold, store [iou,dist_x, dist_y, dist_z] in matches_lab_det and increase the TP count
-                if iou > min_iou:
+                if iou > float(min_iou):
                     matches_lab_det.append([iou, dist_x, dist_y, dist_z])
                 
             #######
@@ -120,8 +120,7 @@ def compute_performance_stats(det_performance_all):
         ious.append(item[0])
         center_devs.append(item[1])
         pos_negs.append(item[2])
-    
-    Ssß    
+
     print('precision = ' + str(precision) + ", recall = " + str(recall))   
 
     # serialize intersection-over-union and deviations in x,y,z

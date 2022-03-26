@@ -132,7 +132,11 @@ def show_pcl(pcl):
 
 The result is:
 
-<img src="/img/S1_EX2.png"/>
+<img src="/img/S1_EX2_1.png"/>
+<img src="/img/S1_EX2_2.png"/>
+<img src="/img/S1_EX2_3.png"/>
+<img src="/img/S1_EX2_4.png"/>
+
 
 ### Section 2: Create Birds-Eye View from Lidar PCL
 This section contains 3 steps:
